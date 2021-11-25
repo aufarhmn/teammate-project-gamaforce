@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var path = require('path')
-var db = require('../db/db')
+var path = require('path');
+var db = require('../db/db');
 
 router.get('/', (req, res, next) => {
     db.all('SELECT * FROM MissionPlan', (err, rows) =>{
@@ -42,9 +42,10 @@ router.get('/delete/:id', (req, res, next) => {
   })
 
 router.get('/openMission/:id', (req, res, next) => {
-      db.all('SELECT * FROM MissionPlan WHERE planId= ?',
+      db.all('SELECT planId, namaMisi, geoJSON FROM MissionPlan WHERE planId= ?',
       [req.params.id, req.body.namaMisi, req.body.geoJSON],
       /*
+      id, missionName, geoJSON
       $data = $query => fetchArray(SQLITE3_ASSOC), {
         GeoJSON : req.body.geoJSON,
         namaMisi : req.body.namaMisi,

@@ -20,6 +20,19 @@
 <div id="map" style="height: 500px;"></div>
 
 <button onclick="saveToDatabase()"> Save Mission </button>
+<br>
+
+<h1>
+    INSERT MANUAL
+</h1>
+<form action="/misi" method="post">
+    Nama Misi: <input type="text" name='namaMisi'>
+    <br>
+    GeoJSON: <input type="text" name="geoJSON">
+    <br>
+    <button type="submit"> Submit </button>
+    <br>
+</form>
 
 <br>
 <h1>LIST MISI</h1>
