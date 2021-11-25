@@ -10,7 +10,6 @@ router.get('/', (req, res, next) => {
             res.status(500).json({status: 'error'})
             return
           };
-
         res.json(rows)
     })
 })
@@ -43,9 +42,14 @@ router.get('/delete/:id', (req, res, next) => {
   })
 
 router.get('/openMission/:id', (req, res, next) => {
-      db.run('SELECT * FROM MissionPlan WHERE planId= ?',
+      db.all('SELECT * FROM MissionPlan WHERE planId= ?',
       [req.params.id, req.body.namaMisi, req.body.geoJSON],
       /*
+      $data = $query => fetchArray(SQLITE3_ASSOC), {
+        GeoJSON : req.body.geoJSON,
+        namaMisi : req.body.namaMisi,
+      }
+      while($data = $query->fetchArray(SQLITE3_ASSOC)) {
       $mission = mysqli_query($conn, $sql) => fetch_assoc();
 
       $missionGeoJSON = $mission['geoJSON'];
