@@ -41,23 +41,9 @@ router.get('/delete/:id', (req, res, next) => {
       })
   })
 
-router.get('/openMission/:id', (req, res, next) => {
-      db.all('SELECT planId, namaMisi, geoJSON FROM MissionPlan WHERE planId= ?',
-      [req.params.id, req.body.namaMisi, req.body.geoJSON],
-      /*
-      id, missionName, geoJSON
-      $data = $query => fetchArray(SQLITE3_ASSOC), {
-        GeoJSON : req.body.geoJSON,
-        namaMisi : req.body.namaMisi,
-      }
-      while($data = $query->fetchArray(SQLITE3_ASSOC)) {
-      $mission = mysqli_query($conn, $sql) => fetch_assoc();
-
-      $missionGeoJSON = $mission['geoJSON'];
-      $missionName = $mission['missionName'];  
-      */
-      )
-})
+router.get('/viewMission/', function(req, res) {
+    res.sendFile(path.join(__dirname, '..', 'htmls', 'viewMission.html'));
+});
 
 module.exports = router;
 
