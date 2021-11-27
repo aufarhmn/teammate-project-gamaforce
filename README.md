@@ -11,6 +11,7 @@ backend udah punya fitur
 - save misi
 - list misi
 - delete misi
-
-ongoing
 - tampilin misi
+
+ongoing(kalo waktunya nyampe)
+- edit misi
