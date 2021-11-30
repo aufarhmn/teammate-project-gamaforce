@@ -1,0 +1,85 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"
+    integrity="sha512-gc3xjCmIy673V6MyOAZhIW93xhM9ei1I+gLbmFjUHIjocENRsLX/QUE1htk5q1XV2D/iie/VQ8DXI6Vu8bexvQ=="
+    crossorigin="anonymous" referrerpolicy="no">
+    <link rel="stylesheet" href="styleMission.css">
+    
+    <div class="header">
+        Team Mate Project Gamaforce
+    </div>
+    <div class="gambar">
+        <img src="data:image/png;base64,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">
+    </div>
+
+</head>
+<body>
+
+<div id="map" style="height: 500px;"></div>
+<div class="daftar">
+<h1>LIST MISI</h1>
+<ul id='viewMission'></ul>
+</div>
+</body>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js" integrity="sha512-ozq8xQKq6urvuU6jNgkfqAmT7jKN2XumbrX1JiB3TnF7tI48DPI4Gy1GXKD/V3EExgAs1V+pRO7vwtS1LHg0Gw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script>        
+    var map = L.map('map')
+    .setView([-7.770398086343634, 110.37753582000731], 17);
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    var editableLayers = new L.FeatureGroup();
+        map.addLayer(editableLayers);
+
+    var drawControl = new L.Control.Draw({
+        edit: {
+        featureGroup: editableLayers
+        }
+    });
+</script>
+
+<script>
+    let misi;
+    $.get("/misi", (data) => {
+        misi = data;
+        data.forEach(element => {
+            $("#viewMission").append(`
+            <li>${element.planName}
+            <button onclick="showMission(${element.planId})">Show Mission</button>
+            <button onclick="hideMission(${element.planId})">Hide Mission</button>
+            <button onclick="window.location.href='/misi/delete/${element.planId}'">Delete Mission</button>
+            </li>
+            `)
+        }
+        );
+    });
+
+    function showMission(planId){
+        console.log(planId);
+        const geoJSON = misi.find(mission => mission.planId == planId).g3wp;
+        data = JSON.parse(geoJSON);
+        L.geoJson(data, {
+        onEachFeature: onEachFeature
+        });
+    }
+
+    function hideMission(planId){
+        console.log(planId);
+        editableLayers.getLayers().forEach(function(layer) {
+            editableLayers.removeLayer(layer);
+        });
+    }
+
+    function onEachFeature(feature, layer) {
+        editableLayers.addLayer(layer);
+    }
+    
+</script>
+</html>

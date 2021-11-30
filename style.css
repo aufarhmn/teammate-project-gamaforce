@@ -1,0 +1,175 @@
+body {
+  padding: 100px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #23315a;
+}
+
+a {
+  color: #00B7FF;
+}
+
+head {
+  background-color: #23315a;
+}
+
+.map{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 1200px;
+  height: 500px;
+  background-color: #ffff;
+  border: solid 5px #e4f2f7;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.gambar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0.7;
+  width: 50px;
+  height: 50px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+/*button:active {
+  position:relative;
+  top: 7px;
+  box-shadow:none;
+
+}*/
+
+/*.title {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  justify-content: center;
+}*/
+
+.formMisi{
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 350px;
+  height: 100px;
+  background-color: #d8d9e2;
+  border: solid 5px #1c2748;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.header{
+  top: 0;
+  left: 50;
+  color: #e4f2f7;
+  position: fixed;
+  opacity: 0.7;
+  width: 100%;
+  height: 15px;
+  display: inline;
+  padding: 20px;
+  background-color: #23315a;
+  z-index: 10;
+}
+
+.opening {
+  font-size: 40px;
+  padding: 40px;
+  padding-bottom: 20px;
+  color: #ffff;
+}
+
+.manual {
+  font-size: 20px;
+  padding: 40px;
+  padding-bottom: 20px;
+  color: #ffff;
+  margin: auto;
+  font-family: sans-serif; 
+}
+
+.weatherwidget-io{
+  margin-bottom: 50px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffff;
+  border-radius: 0.5em;
+  color: #ffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; 
+}
+
+.btn:hover, .btn:focus {
+  color: #23315a;
+  outline: 0;
+  background-color: #d8d9e2;
+
+}
+
+.listMisi {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 500px;
+  height: 300px;
+  background-color: #d8d9e2;
+  border: solid 5px #1c2748;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: block; 
+}
+
+.tombol {
+  display: flex;
+  justify-content: center;
+}
+
+.tombol2 {
+  display: flex;
+  justify-content: center;
+}
+.tombol3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

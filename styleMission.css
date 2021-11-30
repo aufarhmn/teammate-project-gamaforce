@@ -1,0 +1,60 @@
+body {
+    padding: 100px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    
+    background-color: #23315a;
+}
+
+.opening {
+    font-size: 40px;
+    padding: 40px;
+    padding-bottom: 20px;
+    color: #ffff;
+} ini belom
+
+head {
+    background-color: #23315a;
+}
+  
+.header{
+    top: 0;
+    left: 50;
+    color: #e4f2f7;
+    position: fixed;
+    opacity: 0.7;
+    width: 100%;
+    height: 15px;
+    display: inline;
+    padding: 20px;
+    background-color: #23315a;
+    z-index: 10;
+}
+
+.gambar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+  }
+  
+img {
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    color: #ffff;
+    padding: 100px;
+
+}
+
+.daftar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border: 5px solid #ffff;
+    border-radius: 4px;
+}
