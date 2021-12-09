@@ -1,17 +1,9 @@
 teammate-project-gamaforce
 
-frontend udah punya fitur
-- tampilin peta pake leaflet 
-- save misi
-(masih super berantakan)
+Simple Mission Planner for UAV
 
----------------------------
-
-backend udah punya fitur
-- save misi
-- list misi
-- delete misi
-- tampilin misi
-
-ongoing(kalo waktunya nyampe)
-- edit misi
+Feature
+- Draw Mission Manually
+- Draw Mission from Map
+- Save Mission to Database
+- View Mission from Database
